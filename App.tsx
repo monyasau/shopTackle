@@ -5,10 +5,11 @@ import CheckOut from './components/CheckOut';
 import BottomNavigation from './components/BottomNavigation';
 import { useState } from 'react';
 import TopBar from './components/TopBar';
+import SuccessScreen from './components/SuccessScreen';
 
 
 export default function App() {
-  const [activeWindow, setActiveWindow] = useState("products");
+  const [activeWindow, setActiveWindow] = useState("suc");
   const [cart, setCart] = useState([]);
   return (
     <View style={styles.container}>
@@ -16,7 +17,13 @@ export default function App() {
       <View style={styles.pages}>
       {activeWindow == "products" ? <Products cart={cart} setCart={setCart} /> 
       :
-       <CheckOut setCart={setActiveWindow} cart={cart} setCart={setCart}/>}
+      activeWindow=="checkout"?
+      
+      <CheckOut setCart={setActiveWindow} cart={cart} setActiveWindow={setActiveWindow} setCart={setCart}/>
+      :
+      <SuccessScreen/>
+      
+      }
       </View>
       <BottomNavigation active={activeWindow} setActiveWindow={setActiveWindow} />
       <StatusBar style="auto" />
