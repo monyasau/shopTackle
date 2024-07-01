@@ -13,7 +13,7 @@ This is a project built with react native expo with absolutely zero dependencies
 - **Framework:** Built using Expo and React Native.
 - **Platform:** Cross-platform app compatible with iOS and Android.
 
-## Setup Instructions
+## Setup Instructions:
 ### Clone Repository:
 ```bash
    git clone https://github.com/monyasau/shopTackle.git
@@ -26,10 +26,14 @@ This is a project built with react native expo with absolutely zero dependencies
 ```npx expo start```
 
 ## Screenshots:
+![Products Screen](./assets/screenshots/ProductPage.png)
+![Checkout Screen](./assets/screenshots/checkoutPage.png)
+![Order Successful Screen](./assets/screenshots/successPage.png)
 
+## Appetize.io Demo:
 
-## Appetize.io Demo
-
-Access the demonstration of the app on Appetize.io:
+Access the demonstration of the **shopTackle** app on Appetize.io:
 - [Appetize.io Demo Link](https://appetize.io/app/w4lcdx7fremnditpptl6gicokm)
 
+## App download link:
+- [App Download Link](https://expo.dev/artifacts/eas/w4T7tmFa9EEuesovLMgzBv.apk)
