@@ -35,28 +35,33 @@ const productsData = [
 const Products = () => {
     return (
         <>
-
-            <Text style={{textAlign:"center"}}>Available products</Text>
             <ScrollView contentContainerStyle={styles.productsContainer}>
-                {productsData.map((item)=>{
-                    return (
-                        <View key={item.id}>
-                            <Product image={item.src} name={item.name} id={item.id}/>
-                        </View>
-                    )
-                })}
+                <View style={styles.contentContainer}>
+                    <Text style={{ textAlign: "left", width: "95%" }}>Tap any product to add it to cart</Text>
+                    {productsData.map((item) => {
+                        return (
+                            <View key={item.id}>
+                                <Product image={item.src} name={item.name} id={item.id} />
+                            </View>
+                        )
+                    })}
+                </View>
             </ScrollView>
         </>
     )
 }
 const styles = StyleSheet.create({
     productsContainer: {
-        justifyContent: "space-evenly",
-        gap: 10,
-        // width: "90%",
-        padding: 10,
-        flexDirection: "row",
+        alignItems: "center",
+        width: "95%",
+    },
+    contentContainer: {
+        justifyContent: "space-between",
         flexWrap: "wrap",
+        flex: 1,
+        gap: 10,
+        flexDirection: "row",
+        marginHorizontal: "auto"
     }
 })
 export default Products;
