@@ -16,18 +16,20 @@ const style=StyleSheet.create({
     container:{
         borderTopLeftRadius:10,
         borderTopRightRadius:10,
+        borderBottomLeftRadius:2,
+        borderBottomRightRadius:2,
         borderWidth:1,
         borderColor:"#000",
         width:"45%",
     },
     image:{
-        borderTopLeftRadius:10,
-        borderTopRightRadius:10,
+        borderTopLeftRadius:9,
+        borderTopRightRadius:9,
         width:"100%",
-        marginBottom:2,
         height:120,
     },
     projectInfo:{
+        backgroundColor:"#efefef",
         borderColor:"#000",
         borderTopWidth:1,
         flexDirection:"row",
