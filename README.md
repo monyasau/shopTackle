@@ -13,6 +13,14 @@ This is a project built with react native expo with absolutely zero dependencies
 - **Framework:** Built using Expo and React Native.
 - **Platform:** Cross-platform app compatible with iOS and Android.
 
+## Appetize.io Demo:
+
+Access the demonstration of the **shopTackle** app on Appetize.io:
+- [Appetize.io Demo Link](https://appetize.io/app/w4lcdx7fremnditpptl6gicokm)
+
+## App download link:
+- [App Download Link](https://expo.dev/artifacts/eas/w4T7tmFa9EEuesovLMgzBv.apk)
+
 ## Setup Instructions:
 ### Clone Repository:
 ```bash
@@ -29,11 +37,3 @@ This is a project built with react native expo with absolutely zero dependencies
 <img src="./assets/screenshots/ProductPage.png" alt="Products Screen" width="300">
 <img src="./assets/screenshots/checkoutPage.png" alt="Checkout Screen" width="300">
 <img src="./assets/screenshots/successPage.png" alt="Order Successful Screen" width="300">
-
-## Appetize.io Demo:
-
-Access the demonstration of the **shopTackle** app on Appetize.io:
-- [Appetize.io Demo Link](https://appetize.io/app/w4lcdx7fremnditpptl6gicokm)
-
-## App download link:
-- [App Download Link](https://expo.dev/artifacts/eas/w4T7tmFa9EEuesovLMgzBv.apk)
