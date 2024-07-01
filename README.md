@@ -26,9 +26,6 @@ This is a project built with react native expo with absolutely zero dependencies
 ```npx expo start```
 
 ## Screenshots:
-<!-- ![Products Screen](./assets/screenshots/ProductPage.png)
-![Checkout Screen](./assets/screenshots/checkoutPage.png)
-![Order Successful Screen](./assets/screenshots/successPage.png) -->
 <img src="./assets/screenshots/ProductPage.png" alt="Products Screen" width="300">
 <img src="./assets/screenshots/checkoutPage.png" alt="Checkout Screen" width="300">
 <img src="./assets/screenshots/successPage.png" alt="Order Successful Screen" width="300">
