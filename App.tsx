@@ -9,11 +9,14 @@ import TopBar from './components/TopBar';
 
 export default function App() {
   const [activeWindow, setActiveWindow] = useState("products");
+  const [cart, setCart] = useState([]);
   return (
     <View style={styles.container}>
       <TopBar setScreen={setActiveWindow}/>
       <View style={styles.pages}>
-      {activeWindow == "products" ? <Products /> : <CheckOut />}
+      {activeWindow == "products" ? <Products cart={cart} setCart={setCart} /> 
+      :
+       <CheckOut setCart={setActiveWindow} cart={cart} setCart={setCart}/>}
       </View>
       <BottomNavigation active={activeWindow} setActiveWindow={setActiveWindow} />
       <StatusBar style="auto" />
