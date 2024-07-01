@@ -4,6 +4,7 @@ const BottomNavigation = ({active,setActiveWindow}) => {
     return (
         <>
             <View style={style.container}>
+            <View style={style.content}>
                 <TouchableOpacity style={style.pages} onPress={()=>setActiveWindow("products")}>
                     <Text style={active=="products"?style.active:style.inActive}>Products</Text>
                     </TouchableOpacity>
@@ -11,19 +12,24 @@ const BottomNavigation = ({active,setActiveWindow}) => {
                     <Text style={active=="checkout"?style.active:style.inActive}>Check Out</Text>
                     </TouchableOpacity>
             </View>
+            </View>
         </>
     )
 }
 const style = StyleSheet.create({
     container: {
-        display: "flex",
-        flexDirection: "row",
         justifyContent: "space-around",
         borderColor: "#000",
         borderWidth: 1,
         width: "100%",
         padding: 10,
         backgroundColor: "#eee"
+    },
+    content:{
+        justifyContent: "space-around",
+        flexDirection: "row",
+        width:"95%",
+        marginHorizontal:"auto"
     },
     pages: {
         width: "48%",
