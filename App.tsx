@@ -9,7 +9,7 @@ import SuccessScreen from './components/SuccessScreen';
 
 
 export default function App() {
-  const [activeWindow, setActiveWindow] = useState("suc");
+  const [activeWindow, setActiveWindow] = useState("products");
   const [cart, setCart] = useState([]);
   return (
     <View style={styles.container}>
