@@ -3,7 +3,7 @@ import Product from './Product';
 import { productsData } from "./Products";
 
 const CheckOut = ({ cart, setCart }) => {
-    const itemsInCart = productsData.filter((product)=>cart.includes(product.id));
+    const itemsInCart = productsData.filter((product) => cart.includes(product.id));
     return (
         <>
             <View style={style.container}>
@@ -17,9 +17,8 @@ const CheckOut = ({ cart, setCart }) => {
                             <Text style={{ textAlign: "left", width: "95%" }}>Products in cart</Text>
                             {itemsInCart.map((item) => {
                                 return (
-                                    <View key={item.id}>
-                                    <Product name={item.name} id={item.id} setCart={setCart} cart={cart} image={item.src} />
-                                    </View>
+                                    <Product key={item.id} name={item.name} id={item.id} setCart={setCart} cart={cart} image={item.src} />
+
                                 )
                             })}
                         </View>
@@ -33,11 +32,12 @@ const CheckOut = ({ cart, setCart }) => {
 const style = StyleSheet.create({
     productsContainer: {
         alignItems: "center",
+        width: "95%",
+        marginHorizontal:"auto",
     },
     contentContainer: {
         justifyContent: "space-between",
         flexWrap: "wrap",
-        flex: 1,
         gap: 10,
         flexDirection: "row",
     },

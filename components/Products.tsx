@@ -51,6 +51,7 @@ const Products = ({setCart,cart}) => {
 const styles = StyleSheet.create({
     productsContainer: {
         alignItems: "center",
+        marginHorizontal:"auto",
         width: "95%",
     },
     contentContainer: {
