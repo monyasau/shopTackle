@@ -16,7 +16,7 @@ import samsungS24Ultra from "../assets/productImages/samsungS24Ultra.jpg";
 import sandiskSSd from "../assets/productImages/sandiskSSd.jpg";
 import surfacepro7 from "../assets/productImages/surfacepro7.jpg";
 
-const productsData = [
+export const productsData = [
     { id: 0, src: gucciBag, name: "Gucci Bag" },
     { id: 1, src: iphone13pro, name: "Iphone 13 pro" },
     { id: 2, src: LG43LK5000PTA, name: "LG 43LK50PTA TV" },
@@ -32,17 +32,15 @@ const productsData = [
     { id: 12, src: surfacepro7, name: "Surface Pro 7" },
 ]
 
-const Products = () => {
+const Products = ({setCart,cart}) => {
     return (
         <>
             <ScrollView contentContainerStyle={styles.productsContainer}>
                 <View style={styles.contentContainer}>
-                    <Text style={{ textAlign: "left", width: "95%" }}>Tap any product to add it to cart</Text>
+                    <Text style={{ textAlign: "left", width: "95%" }}>Products on shelf</Text>
                     {productsData.map((item) => {
                         return (
-                            <View key={item.id}>
-                                <Product image={item.src} name={item.name} id={item.id} />
-                            </View>
+                                <Product  key={item.id}image={item.src} name={item.name} id={item.id} cart={cart} setCart={setCart} />
                         )
                     })}
                 </View>
@@ -58,10 +56,8 @@ const styles = StyleSheet.create({
     contentContainer: {
         justifyContent: "space-between",
         flexWrap: "wrap",
-        flex: 1,
         gap: 10,
         flexDirection: "row",
-        marginHorizontal: "auto"
     }
 })
 export default Products;
