@@ -26,3 +26,10 @@ This is a project built with react native expo with absolutely zero dependencies
 ```npx expo start```
 
 ## Screenshots:
+
+
+## Appetize.io Demo
+
+Access the demonstration of the app on Appetize.io:
+- [Appetize.io Demo Link](https://appetize.io/app/w4lcdx7fremnditpptl6gicokm)
+
