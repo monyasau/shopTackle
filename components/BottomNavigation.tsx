@@ -22,13 +22,13 @@ const style = StyleSheet.create({
         borderColor: "#000",
         borderWidth: 1,
         width: "100%",
-        padding: 10,
+        paddingVertical: 10,
         backgroundColor: "#eee"
     },
     content:{
         justifyContent: "space-around",
         flexDirection: "row",
-        width:"95%",
+        width:"98%",
         marginHorizontal:"auto"
     },
     pages: {
